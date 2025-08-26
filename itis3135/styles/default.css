@@ -1,0 +1,32 @@
+body{
+    background-color:lightblue;
+    text-align: center;
+    color: darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color:peru;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: line;
+}
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+img{
+    width:50%;
+}
+figure{
+    text-align: center;
+    font-style: italic;
+}
