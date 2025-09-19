@@ -1,11 +1,11 @@
 body{
-    background-color:lightblue;
+    background-color:#add8e6;
     text-align: center;
     color: darkblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a{
-    color:peru;
+    color:#1e3842;
     text-decoration: none;
 }
 a:hover {
