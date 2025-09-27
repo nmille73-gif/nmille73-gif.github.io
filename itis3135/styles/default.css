@@ -36,3 +36,9 @@ header {
 footer {
     text-align: center;
 }
+li {
+    text-align: left;
+}
+ul{
+    text-align: center;
+}
