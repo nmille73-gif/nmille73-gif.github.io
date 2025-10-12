@@ -49,15 +49,28 @@ ul{
 @media screen and ( min-width: 992px ) and ( max-width: 1400px ) {
     header {
         background-color:#47393D;
+        font-size: 32px;
     }
+    body {
+        font-size: 20px;
+    }
+
 }
 @media screen and ( min-width: 601px ) and ( max-width: 991px )  {
     header {
         background-color:#3f93aa;
+        font-size: 22px;
+    }
+    body {
+        font-size: 20px;
     }
 }
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     header {
         background-color:#9B9FA9;
+        font-size: 17px;
+    }
+    body {
+        font-size: 15px;
     }
 }
