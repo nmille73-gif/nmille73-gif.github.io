@@ -157,7 +157,7 @@ function loadImage() {
   main.innerHTML = outputHTML;
 }
 document
-  .querySelector("button[type='clear']")
+  .querySelector("#clear")
   .addEventListener("click", function (event) {
     Array.from(document.querySelectorAll("form input")).forEach((input) => {
       input.value = "";

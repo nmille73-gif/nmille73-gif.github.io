@@ -29,7 +29,7 @@
         <fieldset>
             <legend>Acknowledgement Information</legend>
             <label for="acknowledgementStatement">Enter the following: "I acknowledge that the information I present here is public." and your initials</label>
-            <input id="acknowledgementStatement" name="acknowledgementStatement" type="text" placeholder="Enter the statement and your initials" value="I acknowledge that the information I present here is public. - N.M." required>
+            <input id="acknowledgementStatement" name="acknowledgementStatement" type="text" placeholder="Enter the statement and your initials" value="I acknowledge that the information I present here is public. - N.M." required> <br>
             <label for="acknowledgementDate">Enter the Date:</label>
             <input id="acknowledgementDate" name="acknowledgementDate" type="text" placeholder="Enter today's date" value="10/25/2025" required>
         </fieldset>
@@ -56,18 +56,22 @@
         <fieldset>
             <legend>Personal Statement</legend>
             <label for="personalStatement">Personal Statement: </label>
-            <textarea id="personalStatement" name="personalStatement" placeholder="Enter your personal statement"></textarea>
+            <input id="personalStatement" name="personalStatement" type="text" placeholder="Enter your personal statement" style="width: 400px; height: 20px;" value="Hello everyone, I'm Nora! A few things about me are that I love reading - especially Stephen King novels, I thoroughly enjoy traveling when given the opportunity, and I'm the treasurer of UNCC's Culinary Club, so I spend an incredible amount of my time cooking and eating. I am currently attempting to break a caffeine addiction, so we'll see how that goes." required>
         </fieldset>
         <fieldset>
             <legend>Background Information</legend>
             <label for="personalBackground">Personal Background: </label>
-            <textarea id="personalBackground" name="personalBackground" placeholder="Enter your personal background" required></textarea>
+            <input id="personalBackground" name="personalBackground" type="text" placeholder="Enter your personal background" value="I was born in New Haven, CT, but have spent over 18 years of my life in Apex, NC." 
+            style="width: 400px; height: 20px;" required><br>
             <label for="professionalBackground">Professional Background: </label>
-            <textarea id="professionalBackground" name="professionalBackground" placeholder="Enter your professional background" required></textarea>
+            <input id="professionalBackground" name="professionalBackground" type="text" placeholder="Enter your professional background" style="width: 400px; height: 20px;" 
+            value="I held a Cybersecurity Internship at Fidelity this past summer!" required><br>
             <label for="academicBackground">Academic Background: </label>
-            <textarea id="academicBackground" name="academicBackground" placeholder="Enter your academic background" required></textarea>
+            <input id="academicBackground" name="academicBackground" type="text" placeholder="Enter your academic background" style="width: 400px; height: 20px;"
+            value="I am a junior studying computer science with a concentration in cybersecurity and a minor in French." required> <br>
             <label for="primaryComputer">Primary Computer: </label>
-            <textarea id="primaryComputer" name="primaryComputer" placeholder="Enter your primary computer, OS system, type, and location" required></textarea>
+            <input id="primaryComputer" name="primaryComputer" type="text" placeholder="Enter your primary computer, OS system, type, and location" style="width: 400px; height: 20px;" 
+            value=" I use an Apple, MacOS, laptop, primarily at my apartment." required>
         </fieldset>
         <fieldset>
             <legend>Course Information</legend>
@@ -84,9 +88,11 @@
         <fieldset>
             <legend>Optional Information</legend>
             <label for="funnyThing">Something Funny To Remember Me: </label>
-            <textarea id="funnyThing" name="funnyThing" placeholder="Enter something funny you'd like to share"></textarea>
+            <input id="funnyThing" name="funnyThing" type="text" placeholder="Enter something funny you'd like to share" style="width: 400px; height: 20px;"
+            value="I am sort of terrified of Scandinavian architecture/interior design. I can't fully explain why, maybe I was traumatized by watching Midsommar a few years ago, but I find walking into IKEA deeply unsettling.">
+            <br>
             <label for="shareThing">Something I'd Like to Share: </label>
-            <textarea id="shareThing" name="shareThing" placeholder="Enter something you'd like to share"></textarea>
+            <input id="shareThing" name="shareThing" type="text" placeholder="Enter something you'd like to share" style="width: 400px; height: 20px;">
         </fieldset>
         <fieldset>
             <legend>Link Information</legend>
@@ -97,7 +103,7 @@
             <label for="githubIo">GitHub.io</label>
             <input id="githubIo" name="githubIo" type="url" placeholder="Enter your GitHub.io site" value="https://nmille73-gif.github.io/itis3135/" required>
             <label for="freeCodeCamp">freeCodeCamp</label>
-            <input id="freeCodeCamp" name="freeCodeCamp" type="url" placeholder="Enter your freeCodeCamp link" value="https://www.freecodecamp.org/noramill1202" required>
+            <input id="freeCodeCamp" name="freeCodeCamp" type="url" placeholder="Enter your freeCodeCamp link" value="https://www.freecodecamp.org/noramill1202" required> <br>
             <label for="codecademy">Codecademy</label>
             <input id="codecademy" name="codecademy" type="url" placeholder="Enter your Codecademy link" value="https://www.codecademy.com/profiles/noramill1202" required>
             <label for="linkedIn">LinkedIn</label>
@@ -105,7 +111,7 @@
         </fieldset>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
-        <button type="clear">Clear</button>
+        <button type="button" id="clear">Clear</button>
         </form>
     </main>
     <footer>
