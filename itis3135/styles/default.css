@@ -78,3 +78,6 @@ ul{
         font-size: 15px;
     }
 }
+legend {
+    text-align: center;
+}
