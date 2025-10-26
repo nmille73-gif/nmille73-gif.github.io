@@ -11,16 +11,16 @@ function addCourse() {
   li.innerHTML = `
     <div class="course-inputs">
       <label>Department:</label>
-      <input type="text" name="dept-${courseCount}" placeholder="ITIS" required>
+      <input type="text" name="dept-${courseCount}" placeholder="4-digit department code" value="ITIS" required>
       
       <label>Course Number:</label>
-      <input type="text" name="number-${courseCount}" placeholder="3135" required>
+      <input type="text" name="number-${courseCount}" placeholder="4-digit course number" value="3135" required>
       
       <label>Course Name:</label>
-      <input type="text" name="name-${courseCount}" placeholder="Front End Web Application Development" required>
+      <input type="text" name="name-${courseCount}" placeholder="Course name" value="Front End Web Application Development" required>
       
       <label>Reason for Taking:</label>
-      <textarea name="reason-${courseCount}" placeholder="Why are you taking this course?" required></textarea>
+      <input name="reason-${courseCount}" type="text" placeholder="Why are you taking this course?" value="It's required first and foremost, but I am also interested in learning more about front-end development." style="width: 400px; height: 20px;" required>
       
       <button type="button" class="remove-btn" onclick="removeCourse(${courseCount})">Delete Course</button>
     </div>
@@ -96,8 +96,7 @@ function loadImage() {
         courses.forEach((course) => {
           coursesHTML += `
             <li>
-              <strong>${course.dept} ${course.number}: ${course.name}</strong><br>
-              <em>Reason:</em> ${course.reason}
+              <strong>${course.dept} ${course.number} - ${course.name}</strong>: ${course.reason}
             </li>
           `;
         });
@@ -124,10 +123,9 @@ function loadImage() {
         <li><strong>Professional:</strong> ${data.professionalBackground}</li>
         <li><strong>Academic:</strong> ${data.academicBackground}</li>
         <li><strong>Primary Computer:</strong> ${data.primaryComputer}</li>
-        <li><strong>Courses:</strong>
+        <li><strong>Courses I'm Taking and Why</strong>
           ${coursesHTML}
         </li>
-      </ul>
       
   `;
   
@@ -136,8 +134,9 @@ function loadImage() {
       <p style="text-align: center">"${data.quote}"<br> 
       <i>${data.quoteAuthor}</i></p>
       
-      ${data.funnyThing ? `<h3>Something Funny</h3><p>${data.funnyThing}</p>` : ''}
-      ${data.shareThing ? `<h3>Something to Share</h3><p>${data.shareThing}</p>` : ''}
+     ${data.funnyThing ? `<li><b>Funny/Interesting Item to Remember Me By: </b>${data.funnyThing}` : ''}</li>
+      ${data.shareThing ? `<li><b>Something to Share: </b>${data.shareThing}` : ''}</li>
+      </ul>
       
         <a href="${data.cltWeb}" target="_blank">CLT Web</a> ${data.divider}
         <a href="${data.github}" target="_blank">GitHub</a> ${data.divider}
