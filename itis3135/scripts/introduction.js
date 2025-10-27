@@ -38,14 +38,24 @@ function removeCourse(id) {
 
 function loadImage() {
     const imageInput = document.getElementById('introImage');
+    const loadImagePreview = document.getElementById('loadImagePreview');
+    const currentImageURL = document.getElementById('currentImageURL');
     if (imageInput.files && imageInput.files[0]) {
       const image = imageInput.files[0];
       const imageURL = URL.createObjectURL(image);
       document.getElementById('loadImage').innerHTML = `<img src="${imageURL}" style="max-width: 300px; margin-top: 10px;">`;
+      loadImagePreview.src = imageURL;
+        loadImagePreview = image.name;
+        currentImageURL.value = '';
+    } else {
+        loadImagePreview.src = DEFAULT_IMAGE_SRC;
+        loadImagePreview.alt = "Default profile";
+        currentImageURL.value = DEFAULT_IMAGE_SRC; 
     }
-  }
+    document.getElementById('introImage').onchange = loadImage;
+}
 
-  function resetForm() {
+function resetForm() {
     location.reload(); 
   }
 
@@ -109,12 +119,10 @@ function loadImage() {
   const imageSrc = imageElement ? imageElement.src : '';
   let outputHTML = `
     <div class="output-container">
-      <h2>${data.firstName} ${data.middleName ? data.middleName + ' ' : ''}${data.lastName}</h2>
+      <h2>${data.firstName} ${data.middleName ? data.middleName + '. ' : ''}${data.lastName} ${data.divider} ${data.mascotAdjective} ${data.mascotAnimal}</h2>
       ${data.preferredName ? `<p><em>Preferred Name: ${data.preferredName}</em></p>` : ''}
       
-      <h3>Mascot: ${data.mascotAdjective} ${data.mascotAnimal} ${data.divider}</h3>
-      
-      ${imageSrc ? `<img src="${imageSrc}" alt="Profile" style="max-width: 400px; margin: 20px 0;"><br><em>${data.imageCaption}</em>` : ''}
+      ${imageSrc ? `<img src="${imageSrc}" alt="Profile" ><br><em>${data.imageCaption}</em>` : ''}
       
       <p>${data.personalStatement}</p>
       
