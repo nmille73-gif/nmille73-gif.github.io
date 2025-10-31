@@ -8,19 +8,60 @@ function addCourse() {
   li.className = 'course-item';
   li.id = `course-${courseCount}`;
   
+  const defaultCourses = [
+    {
+        dept: "ITIS",
+        number: "3135",
+        name: "Front End Web Application Development",
+        reason: "It's required first and foremost, but I am also interested in learning more about front-end development."
+      },
+      {
+        dept: "ITSC",
+        number: "3146",
+        name: "Introduction to Operating Systems",
+        reason: "It's required, but from what I understand the information and knowledge bases from this course are highly valuable in my future field."
+      },
+      {
+        dept: "ITSC",
+        number: "3155",
+        name: "Software Engineering",
+        reason: "It's required, but hopefully I can expand my fluency in many coding languages and add it to my resume."
+      },
+      {
+        dept: "ITSC",
+        number: "3688",
+        name: "Computers and Their Impact on Society",
+        reason: "It's required BUT I do think that communication skills are highly valuable and incredibly important to have confidence in."
+      },
+      {
+        dept: "MATH",
+        number: "2164",
+        name: "Matrices and Linear Algebra",
+        reason: "It's required but will hopefully put me in the right flow of thinking when it comes to solving similar coding problems and for critical thinking in general."
+      }
+
+  ];
+
+  const defaultData = courseCount <= 5 ? defaultCourses[courseCount - 1] : {
+    dept: "",
+    number: "",
+    name: "",
+    reason: ""
+  };
+
   li.innerHTML = `
     <div class="course-inputs">
       <label>Department:</label>
-      <input type="text" name="dept-${courseCount}" placeholder="4-digit department code" value="ITIS" required>
+      <input type="text" name="dept-${courseCount}" placeholder="4-digit department code" value="${defaultData.dept}" required>
       
       <label>Course Number:</label>
-      <input type="text" name="number-${courseCount}" placeholder="4-digit course number" value="3135" required>
+      <input type="text" name="number-${courseCount}" placeholder="4-digit course number" value="${defaultData.number}" required>
       
       <label>Course Name:</label>
-      <input type="text" name="name-${courseCount}" placeholder="Course name" value="Front End Web Application Development" required>
+      <input type="text" name="name-${courseCount}" placeholder="Course name" value="${defaultData.name}" required>
       
       <label>Reason for Taking:</label>
-      <input name="reason-${courseCount}" type="text" placeholder="Why are you taking this course?" value="It's required first and foremost, but I am also interested in learning more about front-end development." style="width: 400px; height: 20px;" required>
+      <input name="reason-${courseCount}" type="text" placeholder="Why are you taking this course?" value="${defaultData.reason}" style="width: 400px; height: 20px;" required>
       
       <button type="button" class="remove-btn" onclick="removeCourse(${courseCount})">Delete Course</button>
     </div>
@@ -124,9 +165,9 @@ function resetForm() {
       
       ${imageSrc ? `<img src="${imageSrc}" alt="Profile" ><br><em>${data.imageCaption}</em>` : ''}
       
-      <p>${data.personalStatement}</p>
+      <p style="text-align: left">${data.personalStatement}</p>
       
-      <ul>
+      <ul style="text-align: left">
         <li><strong>Personal:</strong> ${data.personalBackground}</li>
         <li><strong>Professional:</strong> ${data.professionalBackground}</li>
         <li><strong>Academic:</strong> ${data.academicBackground}</li>
