@@ -1,0 +1,100 @@
+header {
+    background-color: #798071;
+    color: #F2E6E1;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+header nav {
+    font-size: 20px;
+}
+
+body{
+    background-color: #2C2A4A;
+}
+
+main {
+    background-color: #F2E6E1;
+    text-align: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    color: #194444;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: #798071;
+    color: #F2E6E1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Verdana, sans-serif;
+}
+
+h3{
+    text-align: center;
+}
+
+a {
+    color: #092327;
+    text-decoration: none;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #53201a;
+}
+
+.gallery {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+.picture{
+    position: relative;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.picture:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px gray;
+}
+
+.picture a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

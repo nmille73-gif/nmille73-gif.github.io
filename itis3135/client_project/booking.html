@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/booking.css">
+    <title>Book With Wes</title>
+</head>
+<body>
+    <header>
+        <h1>Wes Packham Photography</h1>
+        <nav>
+            <a href="./">Home</a> ~
+            <a href="about.html">About Wes</a> ~
+            <a href="location.html">Locations</a> ~
+            <a href="gallery.html">Gallery</a> ~
+            <a href="booking.html">Book With Wes</a>
+        </nav>
+        <h2>Book With Wes</h2>
+    </header>
+    <main>
+        <h3>Submit the form below to create your booking.</h3>
+        <!--Form collects information on a user to set up a date for a photoshoot-->
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstName">First Name: </label>
+                <input id="firstName" name="firstName" type="text" placeholder="First name here" value="Nora" required>
+                <label for="lastName">Last Name: </label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last name here" value="Miller" required>
+                <label for="preferredName">Preferred Name: </label>
+                <input id="preferredName" name="preferredName" type="text" placeholder="Preferred name here">
+                <label for="userEmail">Email: </label>
+                <input id="userEmail" type="email" name="userEmail" placeholder="Enter your email address." value="info@email.com" required>
+            </fieldset>
+            <fieldset>
+                <!--Gives more details about the style of the photoshoot, although specifics are not required-->
+                <legend>Occasion</legend>
+                <label for="occasion">Occasion: </label>
+                <input id="occasion" name="occasion" type="text" placeholder="What's the occasion?" value="Graduation" required>
+                <label for="specifications">Any Specifications: </label>
+                <textarea id="specifications" name="specifications">Enter your style specifications here.</textarea>
+            </fieldset>
+            <fieldset>
+                <!--Provides user preferences for photoshoot, should correlate with details-->
+                <legend>Location</legend>
+                <label for="location">Preferred Locations: </label>
+                <input id="location" type="text" name="locations" placeholder="Enter a location" value="UNCC Botanical Gardens">
+                <ul id="otherLocations"></ul>
+                <button type="button" onclick="addLocation()">Add Another Location</button>
+            </fieldset>
+            <fieldset>
+                <!--Allows user to schedule a date for the photoshoot-->
+                <legend>Scheduling</legend>
+                <label for="date_picker">Select a Date: </label>
+                <input type="date" id="date_picker" name="date_picker">
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="button" id="reset">Reset</button>
+            <button type="button" id="clear">Clear</button>
+        </form>
+    </main>
+    <footer>
+        <p>Designed by <a href="../millernoraincorp.com/index.html">Miller Nora Incorporated</a>&copy; 2025</p>
+    </footer>
+    <script src="scripts/booking_form.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+header {
+    background-color: #798071;
+    color: #F2E6E1;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+header nav {
+    font-size: 20px;
+}
+
+body{
+    background-color: #2C2A4A;
+}
+
+main {
+    background-color: #F2E6E1;
+    max-width: 1200px;
+    margin: 40px auto;
+    color: #194444;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: #798071;
+    color: #F2E6E1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Verdana, sans-serif;
+}
+
+h3{
+    text-align: center;
+}
+
+a {
+    color: #092327;
+    text-decoration: none;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #53201a;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+fieldset label {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+
+fieldset input,
+fieldset textarea {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px;
+    margin-right: 10px;
+    vertical-align: top;
+}
