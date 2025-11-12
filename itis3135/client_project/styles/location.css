@@ -1,6 +1,6 @@
 header {
-    background-color: #798071;
-    color: #F2E6E1;
+    background-color: #82887b;
+    color: #FFFAEB;
     padding: 20px;
     text-align: center;
     font-family: Verdana, sans-serif;
@@ -16,6 +16,7 @@ body{
 
 main {
     background-color: #F2E6E1;
+    text-align: center;
     max-width: 1200px;
     margin: 40px auto;
     color: #194444;
@@ -30,17 +31,18 @@ main p a {
 }
 
 footer {
-    background-color: #798071;
-    color: #F2E6E1;
+    background-color: #82887b;
+    color: #FFFAEB;
     padding: 20px;
     text-align: center;
     margin-top: 40px;
     font-family: Verdana, sans-serif;
     text-decoration: none;
+    font-size: 20px;
 }
 
 a {
-    color: #092327;
+    color: #003333;
     text-decoration: none;
     padding: 0 5px;
     font-weight: bold;
