@@ -1,10 +1,11 @@
 header {
-    background-color: #767f6e;
-    color: #f5f8f3;
+    background-color: #9aa391;
     padding: 20px;
+    color: #A00037;
     text-align: center;
     font-family: Verdana, sans-serif;
 }
+
 
 header nav {
     font-size: 20px;
@@ -27,9 +28,9 @@ main {
 }
 
 footer {
-    background-color: #767f6e;
-    color: #f5f8f3;
+    background-color: #9aa391;
     padding: 20px;
+    color: #5c0021;
     text-align: center;
     margin-top: 40px;
     font-family: Verdana, sans-serif;
@@ -71,10 +72,10 @@ h3{
 }
 
 a {
-    color: #1a2e1a;
+    color: #2C2A4A;
     text-decoration: none;
     padding: 0 5px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 a:hover {
