@@ -91,3 +91,8 @@ main ol {
     margin-right: auto;
     text-align: left;
 }
+
+figcaption a{
+    color:#1e3842;
+    font-style: normal;
+}
