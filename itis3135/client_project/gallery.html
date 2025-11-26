@@ -9,53 +9,34 @@
 </head>
 <body>
     <header>
-        <h1>Wes Packham Photography</h1>
-        <nav>
-            <a href="./">Home</a> 📸
-            <a href="about.html">About Wes</a> 📸
-            <a href="location.html">Locations</a> 📸
-            <a href="gallery.html">Gallery</a> 📸
-            <a href="booking.html">Book With Wes</a>
-        </nav>
+        <div data-include="components/header.html"></div>
         <h2>Gallery</h2>
     </header>
     <main>
-        <!--Gallery displaying some of Wes' photography. Each photo can be clicked on and loaded in a different tab for better, full-sized view-->
         <h3>Wes' Portfolio</h3>
         <h4>Find Even More On Instagram:</h4>
         <p>@wes_shoots</p>
-        <div class="gallery">
-            <div class="picture">
-                <a target="_blank" href="images/girl_brutal.jpg"><img src="images/girl_brutal.jpg" alt="Girl Brutal" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/tristinza.jpg"><img src="images/tristinza.jpg" alt="Tristinza_band" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/lovin_life_1.jpg"><img src="images/lovin_life_1.jpg" alt="lovin'_life_music_fest_p1" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/therapy_dog.jpg"><img src="images/therapy_dog.jpg" alt="therapy_dog" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/skaterboard_1.jpg"><img src="images/skaterboard_1.jpg" alt="skateboarder_1" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/guitar.jpg"><img src="images/guitar.jpg" alt="guitar" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/skateboard_2.jpg"><img src="images/skateboard_2.jpg" alt="skateboarder_2" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/bmx.jpg"><img src="images/bmx.jpg" alt="bmxer" width="300"></a>
-            </div>
-            <div class="picture">
-                <a target="_blank" href="images/hopscotch_2.jpg"><img src="images/hopscotch_2.jpg" alt="hopscotch_music_fest" width="300"></a>
-            </div>
+    <div class="gallery-container">
+        <div class="gallery-main">
+            <img id="gallery-img" src="images/girl_brutal.jpg" alt="Girl Brutal">
         </div>
+        
+        <div class="gallery-controls">
+            <button class="nav-btn" id="prev">← Previous</button>
+            <div class="gallery-info">
+                <span id="current-index">1</span> / <span id="total-images">9</span>
+                <div id="image-title" style="margin-top: 10px; font-size: 16px; color: #2C2A4A;"></div>
+            </div>
+            <button class="nav-btn" id="next">Next →</button>
+        </div>
+
+        <div class="thumbnail-container" id="thumbnails"></div>
+    </div>
     </main>
     <footer>
-        <p>Designed by <a href="../millernoraincorp.com/index.html">Miller Nora Incorporated</a>&copy; 2025</p>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/gallery.js"></script>
 </body>
 </html>
