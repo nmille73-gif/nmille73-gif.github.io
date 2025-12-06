@@ -38,6 +38,8 @@ footer {
     font-weight:600;
 }
 
+/*Styles form in booking.html*/
+
 fieldset {
     margin: 0 auto 10px auto;
     padding: 20px;
@@ -94,6 +96,7 @@ main p a {
     margin: 20px 0;
 }
 
+/*Styles photos with their captions in index.html*/
 figure {
     margin: 0;
     padding: 0;
@@ -106,7 +109,7 @@ figure {
     font-size: 0.9em;
     color: #555;
   }
-
+/*Styles images from index.html*/
 .images a {
     flex: 1; 
     display: block;
@@ -125,6 +128,11 @@ figure {
     transition: transform 0.3s ease;
 }
 
+.images label {
+    color:#194444;
+}
+
+/*Styles introduction paragraph from about.html*/
 .introduction {
     padding: 0;
     margin-bottom: 0;
@@ -144,6 +152,8 @@ figure {
     clear: both;
 }
 
+/*Styles contact information from about.html*/
+
 .contact_info {
     padding: 0 30px 30px 30px;
     text-align: center;
@@ -151,6 +161,8 @@ figure {
     margin-top: -150px; 
     border: 2px solid #2C2A4A;
 }
+
+/*Styles images in index.html*/
 
 figure {
     float: left;
@@ -192,6 +204,8 @@ main::after {
         width: 100%;
     }
 }
+
+/* Styles for gallery of photos in gallery.html*/
 .gallery-container {
     max-width: 900px;
     margin: 40px auto;
@@ -220,7 +234,7 @@ main::after {
     align-items: center;
     margin-top: 20px;
 }
-
+/* Styles for Previous and Next buttons in gallery.html*/
 .nav-btn {
     background-color: #9aa391;
     color: #2C2A4A;
@@ -244,6 +258,7 @@ main::after {
     transform: scale(0.98);
 }
 
+/* Captions for photos in gallery.html*/
 .gallery-info {
     flex-grow: 1;
     text-align: center;
@@ -251,6 +266,8 @@ main::after {
     font-weight: 600;
     color: #194444;
 }
+
+/*Styles for thumbnails in gallery.html*/
 
 .thumbnail-container {
     display: flex;
